@@ -1,0 +1,6 @@
+# Preciso revisar:
+    transformação logaritmica e exponencial,  para saber como funciona direito
+    não sei implementar o fateamento por bits (tópico 06)
+
+# Dúvida
+    o componente REVAI faz a compressão da imagem por bits?

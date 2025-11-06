@@ -12,6 +12,8 @@ Imagens de baixo contraste podem ser resultado de iluminação ruim
     Pode ser interessante enfatizar um intervalo específico de intensidades em uma imagem. As aplicações 
     incluem o realce de características como massas de água em imagens de satélite e o realce de falhas 
     em imagens de raios X.
+    O fatiamento de níveis de intensidade serve para destacar uma faixa específica de tons (intensidades 
+    de cinza) dentro de uma imagem.
 
     s = (r - r_min) / (r_max - r_min) * (255)
 

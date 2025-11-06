@@ -1,0 +1,31 @@
+O histograma de uma imagem digital com níveis de intensidade no intervalo [0, L – 1] é 
+uma função discreta h(r(k)) = n(k) onde r(k)é o k-ésimo valor de intensidade e n(k) é o
+número de pixels da imagem com intensidade r(k)
+
+Costuma-se normalizar um histograma dividindo cada um desses componentes pelo número 
+total de pixels da imagem,expresso pelo produto MN, onde, geralmente, M e N são as 
+dimensões de linha e coluna da imagem.
+
+ou seja, o histograma pode ser dado pela formula 
+
+Simplificado:
+O histograma é uma contagem de quantos pixels têm cada valor.
+    Isso é o histograma não normalizado (contagem bruta).
+
+Se você divide cada contagem pelo número total de pixels da imagem, o resultado é o 
+histograma normalizado.
+    Exemplo: se a imagem tem 1000 pixels e 200 deles têm valor 50 →
+    200/1000=0.2
+    200/1000=0.2.
+    Isso quer dizer que 20% dos pixels têm intensidade 50.
+
+A manipulação de histogramas pode ser utilizada para o realce de imagens, como mostrado
+nesta seção. Além de fornecer estatísti-cas úteis da imagem. Também é util para compressão
+e segmentação.
+
+Pelo histograma, podemos ver se a imagem observada é:
+    Clara                 - Pixels concentrado no lado direito da histograma
+    Escura                - Pixels concentrado no lado esquerdo da histograma
+    Tem alto contraste    - Pixels bem distribuidos pelo histograma
+    Tem baixo contraste   - Pixels mal distribuidos pelo histograma
+

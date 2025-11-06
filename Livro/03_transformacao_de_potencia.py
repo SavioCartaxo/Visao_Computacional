@@ -1,5 +1,6 @@
 """
 # Teoria
+# transformação de potencia - imagem muito clara
 # Transformação de potencia usada para ## Transformação gamma ##
 # Aumenta o contraste.
 
@@ -14,7 +15,7 @@ s = imagem de saida
 
 y = expoente de correcao
     Normalmente calculado com: 
-    mean = np.mean(cv.cvtColor(img, cv.COLOR_BGR2GRAY))
+    mean = np.mean(cv.cvtColor(img, cv.COLOR_BGR2GRAY)) / 255  # divide poe 255 para que nao de overflow
     y = media distribuida em 2 limiares
     
     y < 1 -> clareia imagem

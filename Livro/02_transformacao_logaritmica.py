@@ -1,4 +1,5 @@
 # Forma geral de transformação logaritmica
+# transformação logaritmica - imagem muito escura
 # s = c log (1 + r)
 # c é uma constante
 # r >= 0 # r é a imagem de entrada
