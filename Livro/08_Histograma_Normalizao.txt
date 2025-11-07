@@ -1,0 +1,21 @@
+
+# Equalização de histogramas
+    o Objetivo é fazer oq a "Livro/08_Imagem_de_apoio.png" demonstra, para suiavizar a transição de áreas
+
+A fórmula geral da equalização do histograma de uma imagem é dadd por:
+
+Aqui, usaremos integrau:
+    A integral soma blocos infinitamente pequenos (como 0.0001 + 0.0001 + …), formando uma área contínua em um gráfico.
+
+
+# Como calcular o Histograma normalizado de r
+    Pr(Rk) = Nk / M*N 
+    HistogramaNormalizado = númeroDePixelsComIntensidadeX / totalDePixelsNaImagem
+
+
+# como montar a imagem de saida:
+
+    s = (L - 1) * {integral( pr(w) ) dw}
+        s = imagem de saida
+        L - 1 = 255
+        pr = Histograma normalizado de r

@@ -26,6 +26,6 @@ e segmentação.
 Pelo histograma, podemos ver se a imagem observada é:
     Clara                 - Pixels concentrado no lado direito da histograma
     Escura                - Pixels concentrado no lado esquerdo da histograma
-    Tem alto contraste    - Pixels bem distribuidos pelo histograma
+    Tem alto contraste    z- Pixels bem distribuidos pelo histograma
     Tem baixo contraste   - Pixels mal distribuidos pelo histograma
 
