@@ -1,21 +1,35 @@
 
 # Equalização de histogramas
-    o Objetivo é fazer oq a "Livro/08_Imagem_de_apoio.png" demonstra, para suiavizar a transição de áreas
+    o Objetivo é fazer oq a "Livro/08_Imagem_de_apoio.png" demonstra, 
+    para suiavizar a transição de áreas
 
 A fórmula geral da equalização do histograma de uma imagem é dadd por:
 
 Aqui, usaremos integrau:
-    A integral soma blocos infinitamente pequenos (como 0.0001 + 0.0001 + …), formando uma área contínua em um gráfico.
+    A integral soma blocos infinitamente pequenos (como 0.0001 + 0.0001 + …), 
+    formando uma área contínua em um gráfico.
 
+Normalizando o Histograma:
 
-# Como calcular o Histograma normalizado de r
-    Pr(Rk) = Nk / M*N 
-    HistogramaNormalizado = númeroDePixelsComIntensidadeX / totalDePixelsNaImagem
+    # 1° Passo: calcular o Histograma de r
+    
+    # 2° Passo: calcular o PDF do Histograma:
+        distribuições de probabilidade
+        pdf = hist / (hist.shape[0] * hist.shape[1])
+        ou pdf = hist / hist.sum()
 
+    # 3° Passo: calcular o CDF de r:
+        Soma acumulada dos pequenos valores de distribuição de nivel de cinza
+        o Ultimo valor é 1
+        cdf = np.cumsum(hist_norm)
 
+    # 4° Passo: calcular o Histograma normalizado de r
+        HN = (L - 1) * cdf
+        HN = (255 * cdf).round().astype(np.uint8)
+        
 # como montar a imagem de saida:
 
-    s = (L - 1) * {integral( pr(w) ) dw}
+    s = (L - 1) * {integral( Pr(w) ) dw}
         s = imagem de saida
         L - 1 = 255
         pr = Histograma normalizado de r

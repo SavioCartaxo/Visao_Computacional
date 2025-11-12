@@ -1,0 +1,17 @@
+# Teoria
+
+Imagens de baixo contraste podem ser resultado de iluminação ruim
+    
+    O alargamento de contraste é um processo que expande a faixa de níveis de intensidade de uma imagem 
+    de modo a incluir todo o intervalo de intensidades do meio de gravação ou do dispositivo de exibição.
+    
+    Utiliza o nivel max e min de intensidade da imagem para diminuir o contraste
+    
+    Fatiamento de intensidade:
+    Pode ser interessante enfatizar um intervalo específico de intensidades em uma imagem. As aplicações 
+    incluem o realce de características como massas de água em imagens de satélite e o realce de falhas 
+    em imagens de raios X.
+    O fatiamento de níveis de intensidade serve para destacar uma faixa específica de tons (intensidades 
+    de cinza) dentro de uma imagem.
+
+    s = (r - r_min) / (r_max - r_min) * (255)

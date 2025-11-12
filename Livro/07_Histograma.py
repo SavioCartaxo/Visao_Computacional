@@ -21,7 +21,6 @@ plt.show()
 ################################################################################################################
 
 # com OpenCV
-
 img = cv.imread("imagens_usadas_para_testes/magem_muito_colorida.jpg")
 img = cv.resize(img, (800, 600))
 img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)

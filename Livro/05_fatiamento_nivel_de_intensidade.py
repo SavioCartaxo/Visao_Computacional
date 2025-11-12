@@ -18,11 +18,10 @@ img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 # Definindo a mascara
 img_saida = img.astype(np.float32)
 
-mask = (img >= 0) & (img <= 60)
-not_mask = (img > 60)
+mask = (img_saida <= 60)
 
 img_saida[mask] = 0
-img_saida[not_mask] = 120
+img_saida[~mask] = 120
 
 img_saida = img_saida.astype(np.uint8)
 
