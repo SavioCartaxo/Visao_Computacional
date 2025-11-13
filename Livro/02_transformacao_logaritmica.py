@@ -18,7 +18,8 @@ img_cidade_sp = cv.imread("imagens_usadas_para_testes/SP-Alto-Contraste.jpg")
 #img_cidade_sp_cp = np.uint8(img_cidade_sp_cp)
 
 img_cidade_sp_cp_sem_1 = img_cidade_sp.astype(np.float32)
-img_cidade_sp_cp_sem_1 = (255/np.log(256)) * np.log(img_cidade_sp_cp_sem_1)
+#c = 255 / np.log(np.max(img_cidade_sp_cp_sem_1) + 1)
+img_cidade_sp_cp_sem_1 = 255/np.log(256) * np.log(img_cidade_sp_cp_sem_1)
 img_cidade_sp_cp_sem_1 = np.uint8(img_cidade_sp_cp_sem_1)
 
 #cv.imshow("Imagem_Original", img_cidade_sp_cp)
