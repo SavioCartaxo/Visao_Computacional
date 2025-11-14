@@ -3,7 +3,7 @@ import numpy as np
 
 img = cv.imread("imagens_usadas_para_testes/Imagem_do_livro.png")
 img = cv.resize(img, (800, 600))
-img = cv.cvtColor(img, cv.COLOR_BGR2GRAY).astype(np.uint8)
+img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 # Plot
 cv.imshow("img", img)

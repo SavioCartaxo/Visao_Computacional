@@ -9,7 +9,7 @@ img = corrige_tamanho(img)
 img_cp = img.astype(np.float32)
 r_min, r_max = np.min(img_cp), np.max(img_cp)
 
-img_saida = (img_cp - r_min) / (r_max - r_min) * 255
+img_saida = ((img_cp - r_min) / (r_max - r_min))* 255
 img_saida = img_saida.astype(np.uint8)
 
 cv.imshow("Original", img)

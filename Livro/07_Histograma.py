@@ -26,7 +26,7 @@ img = cv.resize(img, (800, 600))
 img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 hist = cv.calcHist([img], [0], None, [256], [0, 256]) # ([imagem], [canal usado - 0 = gray], [Máscara aplicada], [Número de bins], [faixa de intensidade])
-hist = hist.flatten()                                 # achata o array para 1D
+hist = hist                               # achata o array para 1D
 
 # gráfico
 plt.bar(range(256), hist, width=0.8)
