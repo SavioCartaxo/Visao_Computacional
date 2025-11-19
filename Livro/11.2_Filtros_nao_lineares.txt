@@ -1,0 +1,4 @@
+
+Os filtros de estatística de ordem são filtros espaciais não lineares cuja resposta se baseia na ordenação
+(classificação) dos pixels contidos na área da imagem coberta pelo filtro e substituindo o valor do pixel central
+pelo valor determinado pelo resultado da classificação.

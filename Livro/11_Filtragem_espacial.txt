@@ -1,0 +1,12 @@
+Correlação
+    processo de mover uma mascapara pela imagem e calcular a soma dos produtos em cada posição
+
+Convolução
+    é a mesma coisa, mas de trás para frente
+
+É um codigo muito complicado de fazer, e por isso é preferivel utilizar a função pronta do OpenCV
+
+funções da filtragem espacial
+    suavizar:         Remover ruidos, deixar a imagem mais lisa
+    realsar bordas:   Mostrar mudanças bruscas no contraste, detecção de bordas, segmentação
+    realçar detalhes: aumentar contraste
